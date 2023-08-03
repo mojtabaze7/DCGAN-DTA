@@ -45,7 +45,7 @@ python run_experiments.py --num_windows 128 32 \
                           --model 'A' \
 ```
 
-Since we have three different types of models, there is a hyperparameter named 'model' that controls which type of model is used.
+Since we have three different types of models, there is a parameter named 'model' that controls which type of model is used.
 | Model | Proteins    | Drugs    |
 | :---:   | :---: | :---: 
 | A | Label encoding, embedding layer, DCGAN, and 1DCNN   | Label encoding, embedding layer, DCGAN, and 1DCNN   |
