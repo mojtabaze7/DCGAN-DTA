@@ -13,8 +13,7 @@ from copy import deepcopy
 import keras
 from keras import backend as K
 from keras.layers import Input, Reshape, Flatten, Dense, BatchNormalization, Activation, Embedding, GlobalMaxPooling1D, \
-    Dropout
-from keras.layers.convolutional import Conv1D, Conv1DTranspose
+    Dropout, Conv1D, Conv1DTranspose
 from keras.models import Sequential, Model
 from tensorflow.keras.optimizers import Adam
 from keras.callbacks import EarlyStopping
@@ -29,8 +28,6 @@ rn.seed(1)
 
 session_conf = tf2.ConfigProto(intra_op_parallelism_threads=1, inter_op_parallelism_threads=1)
 tf2.set_random_seed(0)
-sess = tf2.Session(graph=tf2.get_default_graph(), config=session_conf)
-K.set_session(sess)
 
 sns.set_theme(style='white')
 figdir = "figures/"
